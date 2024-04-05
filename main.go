@@ -448,7 +448,6 @@ func (b *balance) print() {
 			fmt.Fprintf(writer, "Sell order:\t|order_id: %v|\t|size: %v|\t|ask: %v|\n", o.order_id, o.init_amount, o.price)
 		}
 	}
-	//fmt.Fprintf(writer, "---------------------------------------------------------\n")
 	writer.Flush()
 }
 
@@ -467,6 +466,4 @@ func main() {
 	users[0].print()
 	users[1].print()
 	users[2].print()
-	//orderB.DelOrder(orderB.BuyOrders[0])
-	//orderB.AddOrder(order{user_id: 4, amount: 500, price: 25, side: false}, &users)
 }
